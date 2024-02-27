@@ -6,6 +6,146 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+<style>
+ footer{
+      width: 100%;
+      padding-bottom: 8rem;
+      background-color: var(--secondaryColor);
+  }
+  section, hr {
+    width: 75%;
+    margin: auto;
+    margin-top: 4rem;
+  }
+  section{
+    font-size: 1.5rem;
+  }
+  hr{
+      margin-top: 1rem;
+      color: #eeeeee;
+  }
+  footer h4{
+    text-transform: uppercase;
+    color: #505050;
+}
+  footer > #section_1{
+      padding: 5rem 0 2rem;
+      display: flex;
+      justify-content: space-between;
+  }
+  #section_1 > #left{
+        width: 65%;
+        color: #868585;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 2.7rem;
+        display: flex;
+  }
+  #left >*{
+      flex: 1;
+  }
+  #left #latest{
+      color: #fff;
+      background-color: #ed3833;
+      margin-left: 0.5rem;
+      padding: 1px 1rem;
+      font-size: 1.2rem;
+      border-radius: 10px;
+  }
+  #left > div:nth-child(3){
+      flex: 1.5;
+  }
+  #section_1 #social_connect{
+    margin-top: 2rem;
+  }
+  #social_connect + div{
+      font-size: 2.5rem;
+      display: flex;
+      gap: 1.5rem;
+  }
+
+  #section_1 h4{
+    margin-bottom: 2rem;
+  }
+ 
+  #section_1 img{
+      height: 42px;
+  }
+  #section_1 > #right{
+        width: 30%;
+  }
+  #right > div{
+      display: flex;
+      gap: 2rem;
+  }
+  #right > div:nth-child(2){
+      margin-top: 3rem;
+  }
+  #right img{
+        display: inline-block;
+        width: 48px;
+        height: 40px;
+        margin-top: 2px;
+  }
+  #right span{
+      font-weight: 700;
+  }
+
+  #section_2{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  #section_2 > div{
+    height: 0.1rem;
+    width: 85%;
+    background-color: #aaa;
+  }
+  
+  #section_3{
+      margin-top: 3rem;
+      font-size: 1.5rem;
+  }
+  #section_3 a{
+      display: inline-block;
+      text-decoration: none;
+      color: #aaa;
+      padding-right: 1rem;
+      margin: 4px;
+      border-right: 1px solid #aaa;
+      text-transform: capitalize;  
+  }
+  #section_4{
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+  }
+  #section_4 a {
+      font-size: 1.7rem;
+      text-transform: capitalize;
+  }
+  #section_5 p, #section_6 p, ol{
+      color: #aaa;
+      font-size: 1.5rem;
+      margin-top: 5px;
+  }
+  #section_6{
+    text-align: justify;
+  }
+  #section_6 div{
+      display: flex;
+      justify-content: flex-end;
+  }
+  #section_6 ol{
+      width: 90%;
+  }
+  #section_6 li{
+      margin: 1rem 0;
+  }
+  #section_6 p{
+      margin-top: 1rem;
+  }
+</style>
 <body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -21,6 +161,76 @@
 
     </div>
     <div class="amal">
+
+        <footer>
+            <section id="section_1">
+                <div id="left">
+                    <div>
+                        <h4>online shopping</h4>
+                        <p>men</p>
+                        <p>women</p>
+                        <p>home & living</p>
+                        <p>beauty</p>
+                        <p>gift cards</p>
+                        <p>myntra insider<span id="latest">New</span></p>
+                    </div>
+                    <div>
+                    <h4>useful links</h4>
+                    <p>men</p>
+                    <p>faq</p>
+                    <p>t&c</p>
+                    <p>terms of use</p>
+                    <p>track order</p>
+                    <p>shipping</p>
+                    <p>cancellation</p>
+                    <p>returns</p>
+                    <p>whitehat</p>
+                    <p>blog</p>
+                    <p>careers</p>
+                    <p>privacy policy</p>
+                    <p>site map</p>
+                    <p>corporate information</p>
+                    </div>
+                    <div>
+                        <h4>experience myntra app on mobile</h4>
+                        <img src="https://bit.ly/3LluZ4L" alt="android">
+                        <img src="https://bit.ly/3DmWQys" alt="ios">
+                        <h4 id="social_connect">keep in touch</h4>
+                        <div>
+                            <i class="fa-brands fa-facebook-square"></i>
+                            <i class="fa-brands fa-twitter-square"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="right">
+                    <div>
+                        <img src="https://bit.ly/3JPiL47" alt="original">
+                        <p> <span>100% ORIGINAL</span> guarantee for all products at myntra.com</p>
+                    </div>
+                    <div>
+                        <img src="https://bit.ly/3uBalH4" alt="return_policy">
+                        <p><span>Return within 30days</span> of receiving your order</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="section_2">
+                <h4>popular searches</h4>
+                <div></div> 
+            </section>
+    
+            <section id="section_3">
+            <a href="">pillow</a><a href="">towels</a><a href="">bathroom rugs</a><a href="">Water Bottle</a><a href="">jeans</a><a href="">suit</a><a href="">trouser</a><a href="">shalwar</a><a href="">shampoo</a><a href="">sherwani</a><a href="">cargo</a><a href="">shirt</a><a href="">mirrors</a><a href="">shelwar</a><a href="">Bracelets</a><a href="">sherwani</a><a href="">laundary bags</a><a href="">Water Bottle</a><a href="">Water Bottle</a><a href="">rings</a><a href="">Water Bottle</a><a href="">Water Bottle</a><a href="">curtians</a><a href="">tableware</a><a href="">blazzers</a><a href="">wall lamps</a><a href="">Water Bottle</a><a href="">bed cover</a><a href="">cushion covers</a><a href="">key holders</a>
+            </section>
+    
+            <section id="section_4">
+                <p>In case of any concern <a href="#"> contact us</a></p>
+                <p>&#169; 2022 www.myntra.com. All rights reserved.</p>
+            </section>
+            
+       </footer>
 
     </div>
     
