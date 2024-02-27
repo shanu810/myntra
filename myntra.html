@@ -1,388 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-<style>
- footer{
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    footer {
       width: 100%;
       padding-bottom: 8rem;
       background-color: var(--secondaryColor);
-  }
-  section, hr {
-    width: 75%;
-    margin: auto;
-    margin-top: 4rem;
-  }
-  section{
-    font-size: 1.5rem;
-  }
-  hr{
+    }
+
+    section,
+    hr {
+      width: 75%;
+      margin: auto;
+      margin-top: 4rem;
+    }
+
+    section {
+      font-size: 1.5rem;
+    }
+
+    hr {
       margin-top: 1rem;
       color: #eeeeee;
-  }
-  footer h4{
-    text-transform: uppercase;
-    color: #505050;
-}
-  footer > #section_1{
+    }
+
+    footer h4 {
+      text-transform: uppercase;
+      color: #505050;
+    }
+
+    footer>#section_1 {
       padding: 5rem 0 2rem;
       display: flex;
       justify-content: space-between;
-  }
-  #section_1 > #left{
-        width: 65%;
-        color: #868585;
-        font-weight: 400;
-        text-transform: capitalize;
-        line-height: 2.7rem;
-        display: flex;
-  }
-  #left >*{
+    }
+
+    #section_1>#left {
+      width: 65%;
+      color: #868585;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 2.7rem;
+      display: flex;
+    }
+
+    #left>* {
       flex: 1;
-  }
-  #left #latest{
+    }
+
+    #left #latest {
       color: #fff;
       background-color: #ed3833;
       margin-left: 0.5rem;
       padding: 1px 1rem;
       font-size: 1.2rem;
       border-radius: 10px;
-  }
-  #left > div:nth-child(3){
+    }
+
+    #left>div:nth-child(3) {
       flex: 1.5;
-  }
-  #section_1 #social_connect{
-    margin-top: 2rem;
-  }
-  #social_connect + div{
+    }
+
+    #section_1 #social_connect {
+      margin-top: 2rem;
+    }
+
+    #social_connect+div {
       font-size: 2.5rem;
       display: flex;
       gap: 1.5rem;
-  }
+    }
 
-  #section_1 h4{
-    margin-bottom: 2rem;
-  }
- 
-  #section_1 img{
+    #section_1 h4 {
+      margin-bottom: 2rem;
+    }
+
+    #section_1 img {
       height: 42px;
-  }
-  #section_1 > #right{
-        width: 30%;
-  }
-  #right > div{
+    }
+
+    #section_1>#right {
+      width: 30%;
+    }
+
+    #right>div {
       display: flex;
       gap: 2rem;
-  }
-  #right > div:nth-child(2){
-      margin-top: 3rem;
-  }
-  #right img{
-        display: inline-block;
-        width: 48px;
-        height: 40px;
-        margin-top: 2px;
-  }
-  #right span{
-      font-weight: 700;
-  }
+    }
 
-  #section_2{
+    #right>div:nth-child(2) {
+      margin-top: 3rem;
+    }
+
+    #right img {
+      display: inline-block;
+      width: 48px;
+      height: 40px;
+      margin-top: 2px;
+    }
+
+    #right span {
+      font-weight: 700;
+    }
+
+    #section_2 {
       display: flex;
       align-items: center;
       justify-content: space-between;
-  }
-  #section_2 > div{
-    height: 0.1rem;
-    width: 85%;
-    background-color: #aaa;
-  }
-  
-  #section_3{
+    }
+
+    #section_2>div {
+      height: 0.1rem;
+      width: 85%;
+      background-color: #aaa;
+    }
+
+    #section_3 {
       margin-top: 3rem;
       font-size: 1.5rem;
-  }
-  #section_3 a{
+    }
+
+    #section_3 a {
       display: inline-block;
       text-decoration: none;
       color: #aaa;
       padding-right: 1rem;
       margin: 4px;
       border-right: 1px solid #aaa;
-      text-transform: capitalize;  
-  }
-  #section_4{
+      text-transform: capitalize;
+    }
+
+    #section_4 {
       margin-top: 3rem;
       display: flex;
       justify-content: space-between;
-  }
-  #section_4 a {
+    }
+
+    #section_4 a {
       font-size: 1.7rem;
       text-transform: capitalize;
-  }
-  #section_5 p, #section_6 p, ol{
+    }
+
+    #section_5 p,
+    #section_6 p,
+    ol {
       color: #aaa;
       font-size: 1.5rem;
       margin-top: 5px;
-  }
-  #section_6{
-    text-align: justify;
-  }
-  #section_6 div{
+    }
+
+    #section_6 {
+      text-align: justify;
+    }
+
+    #section_6 div {
       display: flex;
       justify-content: flex-end;
-  }
-  #section_6 ol{
+    }
+
+    #section_6 ol {
       width: 90%;
-  }
-  #section_6 li{
+    }
+
+    #section_6 li {
       margin: 1rem 0;
-  }
-  #section_6 p{
+    }
+
+    #section_6 p {
       margin-top: 1rem;
-  }
-</style>
+    }
+  </style>
 </head>
 <style>
-  .farshad{
+  .farshad {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 </style>
+
 <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 
-    <div class="ebin">
-        <nav class="navbar navbar-expand-lg" style="background-color:whitesmoke;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="https://cdn.freelogovectors.net/wp-content/uploads/2023/01/myntra-logo-freelogovectors.net_.png"
-                        class="img-1" style=" height: 35px; width: 60px;">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: whitesmoke; color: black; border: none;">
-                              MEN
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item" href="#">T-shirt</a></li>
-                              <li><a class="dropdown-item" href="#">Shitr</a></li>
-                              <li><a class="dropdown-item" href="#">Jeans</a></li>
-                              <li><a class="dropdown-item" href="#">Shorts</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: whitesmoke; color: black; border: none;">
-                              WOMEN
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item" href="#">Sarees</a></li>
-                              <li><a class="dropdown-item" href="#">Tops</a></li>
-                              <li><a class="dropdown-item" href="#"></a>Jeans</li>
-                              <li><a class="dropdown-item" href="#">Shorts</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: whitesmoke; color: black; border: none;">
-                              KIDS
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item" href="#">T-shirt</a></li>
-                              <li><a class="dropdown-item" href="#">Shitr</a></li>
-                              <li><a class="dropdown-item" href="#">Jeans</a></li>
-                              <li><a class="dropdown-item" href="#">Shorts</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: whitesmoke; color: black; border: none;">
-                              HOME&LIVING
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item" href="#">Bed Runner</a></li>
-                              <li><a class="dropdown-item" href="#">Pillow Cover</a></li>
-                              <li><a class="dropdown-item" href="#">Bed Cover</a></li>
-                              <li><a class="dropdown-item" href="#">Sofa Cover</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: whitesmoke; color: black; border: none;">
-                              BEAUTY
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item" href="#">Lip Stick</a></li>
-                              <li><a class="dropdown-item" href="#">Lip Glow</a></li>
-                              <li><a class="dropdown-item" href="#">Shampoo</a></li>
-                              <li><a class="dropdown-item" href="#">Hair Oil</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: whitesmoke; color: black; border: none;">
-                              STUDIO
-                            </button>
-                            <!-- <ul class="dropdown-menu dropdown-menu-dark">
+  <div class="ebin">
+    <nav class="navbar navbar-expand-lg" style="background-color:whitesmoke;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://cdn.freelogovectors.net/wp-content/uploads/2023/01/myntra-logo-freelogovectors.net_.png"
+            class="img-1" style=" height: 35px; width: 60px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                style="background-color: whitesmoke; color: black; border: none;">
+                MEN
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">T-shirt</a></li>
+                <li><a class="dropdown-item" href="#">Shitr</a></li>
+                <li><a class="dropdown-item" href="#">Jeans</a></li>
+                <li><a class="dropdown-item" href="#">Shorts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                style="background-color: whitesmoke; color: black; border: none;">
+                WOMEN
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Sarees</a></li>
+                <li><a class="dropdown-item" href="#">Tops</a></li>
+                <li><a class="dropdown-item" href="#"></a>Jeans</li>
+                <li><a class="dropdown-item" href="#">Shorts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                style="background-color: whitesmoke; color: black; border: none;">
+                KIDS
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">T-shirt</a></li>
+                <li><a class="dropdown-item" href="#">Shitr</a></li>
+                <li><a class="dropdown-item" href="#">Jeans</a></li>
+                <li><a class="dropdown-item" href="#">Shorts</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                style="background-color: whitesmoke; color: black; border: none;">
+                HOME&LIVING
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Bed Runner</a></li>
+                <li><a class="dropdown-item" href="#">Pillow Cover</a></li>
+                <li><a class="dropdown-item" href="#">Bed Cover</a></li>
+                <li><a class="dropdown-item" href="#">Sofa Cover</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                style="background-color: whitesmoke; color: black; border: none;">
+                BEAUTY
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Lip Stick</a></li>
+                <li><a class="dropdown-item" href="#">Lip Glow</a></li>
+                <li><a class="dropdown-item" href="#">Shampoo</a></li>
+                <li><a class="dropdown-item" href="#">Hair Oil</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                style="background-color: whitesmoke; color: black; border: none;">
+                STUDIO
+              </button>
+              <!-- <ul class="dropdown-menu dropdown-menu-dark">
                               <li><a class="dropdown-item" href="#">Action</a></li>
                               <li><a class="dropdown-item" href="#">Another action</a></li>
                               <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul> -->
-                          </li>
-                          <form class="d-flex" role="search" style="width: 400px; margin-left:40px ;">
-                            <input class="form-control me-2" type="search" placeholder="Search for products brands and more" aria-label="Search">
-                            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                          </form>
-                          <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: whitesmoke; color: black; border: none;">
-                              <img src="https://cdn-icons-png.flaticon.com/512/3106/3106773.png" style="width: 20px; height: 20px;">
-                              Profile
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                              <li><a class="dropdown-item" href="#">Order</a></li>
-                              <li><a class="dropdown-item" href="#">Whishlist</a></li>
-                              <li><a class="dropdown-item" href="#">Login</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: whitesmoke; color: black; border: none;">
-                                <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png" style="width: 20px; height: 20px;">
-                              Wishlist
-                            </button>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: whitesmoke; color: black; border: none;">
-                                <img src="https://www.svgrepo.com/show/43071/shopping-bag.svg" style="width: 20px; height: 20px;">
-                              Bag
-                            </button>
-                        </li>
-                
-                    </ul>
-                </div>
-            </div>
-        </nav> 
+            </li>
+            <form class="d-flex" role="search" style="width: 400px; margin-left:40px ;">
+              <input class="form-control me-2" type="search" placeholder="Search for products brands and more"
+                aria-label="Search">
+              <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                style="background-color: whitesmoke; color: black; border: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/3106/3106773.png" style="width: 20px; height: 20px;">
+                Profile
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Order</a></li>
+                <li><a class="dropdown-item" href="#">Whishlist</a></li>
+                <li><a class="dropdown-item" href="#">Login</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                style="background-color: whitesmoke; color: black; border: none;">
+                <img src="https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png"
+                  style="width: 20px; height: 20px;">
+                Wishlist
+              </button>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                style="background-color: whitesmoke; color: black; border: none;">
+                <img src="https://www.svgrepo.com/show/43071/shopping-bag.svg" style="width: 20px; height: 20px;">
+                Bag
+              </button>
+            </li>
 
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  <div class="farshad">
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img 1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img 2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img 3.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img 4.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img 5.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img 6.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img 7.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="farshad">
 
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img 1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img 2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img 3.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img 4.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img 5.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img 6.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img 7.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  </div>
+  <div class="anamika">
+    <h3 style="padding: 65px;">MEDAL WORTHY BRANDS TO BAG</h3>
+
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="first.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="second.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="third.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="fourth.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="amal">
+
+    <footer>
+      <section id="section_1">
+        <div id="left">
+          <div>
+            <h4>online shopping</h4>
+            <p>men</p>
+            <p>women</p>
+            <p>home & living</p>
+            <p>beauty</p>
+            <p>gift cards</p>
+            <p>myntra insider<span id="latest">New</span></p>
           </div>
+          <div>
+            <h4>useful links</h4>
+            <p>men</p>
+            <p>faq</p>
+            <p>t&c</p>
+            <p>terms of use</p>
+            <p>track order</p>
+            <p>shipping</p>
+            <p>cancellation</p>
+            <p>returns</p>
+            <p>whitehat</p>
+            <p>blog</p>
+            <p>careers</p>
+            <p>privacy policy</p>
+            <p>site map</p>
+            <p>corporate information</p>
+          </div>
+          <div>
+            <h4>experience myntra app on mobile</h4>
+            <img src="https://bit.ly/3LluZ4L" alt="android">
+            <img src="https://bit.ly/3DmWQys" alt="ios">
+            <h4 id="social_connect">keep in touch</h4>
+            <div>
+              <i class="fa-brands fa-facebook-square"></i>
+              <i class="fa-brands fa-twitter-square"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div id="right">
+          <div>
+            <img src="https://bit.ly/3JPiL47" alt="original">
+            <p> <span>100% ORIGINAL</span> guarantee for all products at myntra.com</p>
+          </div>
+          <div>
+            <img src="https://bit.ly/3uBalH4" alt="return_policy">
+            <p><span>Return within 30days</span> of receiving your order</p>
+          </div>
+        </div>
+      </section>
 
-    </div>
-    <div class="anamika">
+      <section id="section_2">
+        <h4>popular searches</h4>
+        <div></div>
+      </section>
 
-    </div>
-    <div class="amal">
+      <section id="section_3">
+        <a href="">pillow</a><a href="">towels</a><a href="">bathroom rugs</a><a href="">Water Bottle</a><a
+          href="">jeans</a><a href="">suit</a><a href="">trouser</a><a href="">shalwar</a><a href="">shampoo</a><a
+          href="">sherwani</a><a href="">cargo</a><a href="">shirt</a><a href="">mirrors</a><a href="">shelwar</a><a
+          href="">Bracelets</a><a href="">sherwani</a><a href="">laundary bags</a><a href="">Water Bottle</a><a
+          href="">Water Bottle</a><a href="">rings</a><a href="">Water Bottle</a><a href="">Water Bottle</a><a
+          href="">curtians</a><a href="">tableware</a><a href="">blazzers</a><a href="">wall lamps</a><a href="">Water
+          Bottle</a><a href="">bed cover</a><a href="">cushion covers</a><a href="">key holders</a>
+      </section>
 
-        <footer>
-            <section id="section_1">
-                <div id="left">
-                    <div>
-                        <h4>online shopping</h4>
-                        <p>men</p>
-                        <p>women</p>
-                        <p>home & living</p>
-                        <p>beauty</p>
-                        <p>gift cards</p>
-                        <p>myntra insider<span id="latest">New</span></p>
-                    </div>
-                    <div>
-                    <h4>useful links</h4>
-                    <p>men</p>
-                    <p>faq</p>
-                    <p>t&c</p>
-                    <p>terms of use</p>
-                    <p>track order</p>
-                    <p>shipping</p>
-                    <p>cancellation</p>
-                    <p>returns</p>
-                    <p>whitehat</p>
-                    <p>blog</p>
-                    <p>careers</p>
-                    <p>privacy policy</p>
-                    <p>site map</p>
-                    <p>corporate information</p>
-                    </div>
-                    <div>
-                        <h4>experience myntra app on mobile</h4>
-                        <img src="https://bit.ly/3LluZ4L" alt="android">
-                        <img src="https://bit.ly/3DmWQys" alt="ios">
-                        <h4 id="social_connect">keep in touch</h4>
-                        <div>
-                            <i class="fa-brands fa-facebook-square"></i>
-                            <i class="fa-brands fa-twitter-square"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                    </div>
-                </div>
-                <div id="right">
-                    <div>
-                        <img src="https://bit.ly/3JPiL47" alt="original">
-                        <p> <span>100% ORIGINAL</span> guarantee for all products at myntra.com</p>
-                    </div>
-                    <div>
-                        <img src="https://bit.ly/3uBalH4" alt="return_policy">
-                        <p><span>Return within 30days</span> of receiving your order</p>
-                    </div>
-                </div>
-            </section>
-    
-            <section id="section_2">
-                <h4>popular searches</h4>
-                <div></div> 
-            </section>
-    
-            <section id="section_3">
-            <a href="">pillow</a><a href="">towels</a><a href="">bathroom rugs</a><a href="">Water Bottle</a><a href="">jeans</a><a href="">suit</a><a href="">trouser</a><a href="">shalwar</a><a href="">shampoo</a><a href="">sherwani</a><a href="">cargo</a><a href="">shirt</a><a href="">mirrors</a><a href="">shelwar</a><a href="">Bracelets</a><a href="">sherwani</a><a href="">laundary bags</a><a href="">Water Bottle</a><a href="">Water Bottle</a><a href="">rings</a><a href="">Water Bottle</a><a href="">Water Bottle</a><a href="">curtians</a><a href="">tableware</a><a href="">blazzers</a><a href="">wall lamps</a><a href="">Water Bottle</a><a href="">bed cover</a><a href="">cushion covers</a><a href="">key holders</a>
-            </section>
-    
-            <section id="section_4">
-                <p>In case of any concern <a href="#"> contact us</a></p>
-                <p>&#169; 2022 www.myntra.com. All rights reserved.</p>
-            </section>
-            
-       </footer>
+      <section id="section_4">
+        <p>In case of any concern <a href="#"> contact us</a></p>
+        <p>&#169; 2022 www.myntra.com. All rights reserved.</p>
+      </section>
 
-    </div>
-    
+    </footer>
+
+  </div>
+
 </body>
+
 </html>
